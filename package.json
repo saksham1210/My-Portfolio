@@ -1,0 +1,24 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "\"This is a Portfolio\"",
+  "main": "index.html",
+  "scripts": {
+    "start":"npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saksham1210/My-Porfolio.git"
+  },
+  "author": "Saksham Dhull",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saksham1210/My-Porfolio/issues"
+  },
+  "homepage": "https://github.com/saksham1210/My-Porfolio#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
