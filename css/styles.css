@@ -1,0 +1,17 @@
+#colorstrip{
+	height:0px;
+	border-bottom:solid 5px #04ABDF;
+}
+.nav-item{
+	padding:0% 5% 0% 5%;
+}
+.fa-home{
+	color:black;
+}
+#homeIMG img{
+	padding:14%;
+	border-radius: 150px;
+}
+.row h1{
+	font-size: 72px;
+}
