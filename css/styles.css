@@ -1,6 +1,11 @@
 html{
 	scroll-behavior: smooth;
 }
+#apos{
+	color:#04ABDF;
+	font-family: 'Varela Round', sans-serif;
+	font-size:120%;
+}
 #colorstrip{
 	height:0px;
 	border-bottom:solid 7px #04ABDF;
@@ -20,9 +25,10 @@ html{
 	border-radius: 150px;
 }
 .row h1{
-	font-size: 500%;
-	font-family: 'Muli', sans-serif;
-	color: #04ABDF;
+	font-size: 450%;
+	/*font-family: 'Muli', sans-serif;*/
+	font-family: 'Varela Round', sans-serif;
+/*	color: #04ABDF;*/
 }
 .btn-social-icon{
 	display:block;
@@ -37,10 +43,21 @@ html{
 #centerthis{
 	margin-bottom: auto;
 	margin-top: auto;
+	border-bottom-right-radius: 20px;
+	border-top-right-radius: 20px;
 }
 .card-body{
 	padding:3%;
 }
 .section-heading{
-	font-size: 400%;
+	font-size: 380%;
+	font-family: 'Muli', sans-serif;
+/*	color: #0090BD;*/
+}
+#Aboutme1{
+	font-size: 150%;
+	padding:7%;
+}
+.container{
+/*	margin-left: 70px;*/
 }
