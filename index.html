@@ -28,10 +28,7 @@
 					<a href="#" class="nav-link">About</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link">Projects</a>
-				</li>
-				<li class="nav-item">
-					<a href="#" class="nav-link">Experience</a>
+					<a href="#Projects" class="nav-link">Projects</a>
 				</li>
 				<li class="nav-item">
 					<a href="#" class="nav-link">Contact</a>
@@ -57,8 +54,8 @@
 		</div>
 	</section>
 	<!-- Landing Page -->
-	<div class="conatiner">
-		<div class="row justify-content-center">
+	<div class="conatiner vh-100" id="HomePage">
+		<div class="row justify-content-center ">
 			<div class="col-12 col-sm-5 align-self-center">
 				<div class="row justify-content-start pl-1">
 					<div class="col-4">
@@ -74,14 +71,50 @@
 			</div>
 		</div>
 	</div>
-	
 	<!-- Main Content -->
-	<div class="conatiner">
-
+	<div class="conatiner ml-auto ml-sm-5 vh-100" id="Projects">
+		<h2 class="text-center">Projects</h2>
+		<div class="row row-content">
+			<div class="col-12 col-sm-4">
+				<div class="card" id="project1">
+					<div class="card-body justify-content-start">
+						<img class="img-fluid" src="/img/pvz1.jpg">
+						<div class="card-footer text-center">
+							<span>Plants Vs Zombies</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-4">
+				<div class="card" id="project2">
+					<div class="card-body justify-content-start">
+						<img class="img-fluid " src="/img/expaze.jpg">
+					</div>
+					<div class="card-footer text-center">
+						<span>Expaze</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-4">
+				<div class="card" id="project3">
+					<div class="card-body justify-content-start">
+						<img class="img-fluid" src="/img/pvz1.jpg">
+					</div>
+					<div class="card-footer text-center">
+						<span>Plants Vs Zombies</span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+    	ScrollReveal().reveal('#project1',{distance:"50px",duration:1000});
+    	ScrollReveal().reveal('#project2',{distance:"50px",duration:1000,delay:500});
+    	ScrollReveal().reveal('#project3',{distance:"50px",duration:1000,delay:1000});
+    </script>
 </body>
 </html>

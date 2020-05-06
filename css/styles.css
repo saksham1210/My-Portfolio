@@ -13,7 +13,7 @@
 	border-radius: 150px;
 }
 .row h1{
-	font-size: 450%;
+	font-size: 400%;
 }
 .btn-social-icon{
 	display:block;
@@ -23,6 +23,7 @@
 }
 .social-contacts{
 	position:fixed;
+	z-index: 999;
 	padding :1%;
 	height:100%;
 }
@@ -30,3 +31,13 @@
 	margin-bottom: auto;
 	margin-top: auto;
 }
+.card-body{
+	padding:3%;
+}
+/*#Projects{
+	margin-left: 100px;
+}*/
+/*#project1,#project2,#project3{
+	height:100vh;
+	width: 100%;
+}*/
