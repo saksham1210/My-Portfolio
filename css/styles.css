@@ -3,6 +3,12 @@ html{
 }
 body{
 	background-color:white; 
+	margin:0px;
+	padding:0%;
+}
+.main,.row{
+	margin:0px;
+	padding:0%;
 }
 .navbar{
 	background-color: #04ABDF;
@@ -49,11 +55,25 @@ body{
 	padding :1.5%;
 	height:100%;
 }
-#centerthis{
+.colorMode{
+	position:fixed;
+	right: 0px;
+	z-index:999;
+	padding:1.5%;
+	height:100%;
+
+}
+#centerthisL{
 	margin-bottom: auto;
 	margin-top: auto;
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px;
+}
+#centerthisR{
+	margin-bottom: auto;
+	margin-top: auto;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
 }
 .card-body{
 	padding:3%;
@@ -63,9 +83,11 @@ body{
 	font-family: 'Muli', sans-serif;
 /*	color: #0090BD;*/
 }
-#Aboutme1{
-	font-size: 150%;
+#Aboutme,#Projects,#Aboutme1,#Aboutme2{
 	padding:7%;
+}
+#Aboutme1,#Aboutme2{
+	font-size: 150%;
 }
 .container{
 	margin-bottom: 40px;

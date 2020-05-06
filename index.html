@@ -16,10 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
-	<!-- PLANTS VS ZOMBIES MODAL -->
-	<div class="modal modal-lg">
-	</div>
-
 	<nav class="navbar navbar-light navbarScroll border-bottom border-dark navbar-expand-sm mb-5">
 		<a class="nav-link" href="/index.html">
 			<i class="fas fa-home fa-lg"></i>
@@ -41,48 +37,62 @@
 			</ul>			
 		</div>
 	</nav>
-	<!-- Contact Strip -->
-	<section class="social-contacts d-none d-sm-flex pl-0">
-		<div id="centerthis" class="bg-warning p-2">
-			<a class="btn btn-social-icon" href="https://www.linkedin.com/in/sakshamdhull/" target="_blank">
-				<i class="fab fa-linkedin fa-lg"></i>
-			</a>
-			<a class="btn btn-social-icon" href="https://github.com/saksham1210" target="_blank">
-				<i class="fab fa-github fa-lg"></i>
-			</a>
-			<a class="btn btn-social-icon" href="https://www.instagram.com/bloop__doop/" target="_blank">
-				<i class="fab fa-instagram fa-lg"></i>
-			</a>
-			<a class="btn btn-social-icon" href="https://twitter.com/Bloop__Doop" target="_blank">
-				<i class="fab fa-twitter fa-lg"></i>
-			</a>
-		</div>
-	</section>
-	<!-- Landing Page -->
-	<div class="container mr-0" id="HomePage">
-		<div class="row justify-content-center">
-			<div class="col-12 col-sm-5 align-self-center">
-				<div class="row justify-content-start pl-1">
-					<div class="col-5">
-						<h1> Hello,</h1>
-					</div>
-					<div class="col-12">
-						<h1>I<span id="apos">'</span>m Saksham.</h1>
+	<div class="container-fluid w-100 main">
+		<div class="row w-100">
+		<!-- Contact Strip -->
+			<div class="col-1 pl-0">
+				<div class="social-contacts d-flex pl-0">
+					<div id="centerthisL" class="bg-warning p-2">
+						<a class="btn btn-social-icon" href="https://www.linkedin.com/in/sakshamdhull/" target="_blank">
+							<i class="fab fa-linkedin fa-lg"></i>
+						</a>
+						<a class="btn btn-social-icon" href="https://github.com/saksham1210" target="_blank">
+							<i class="fab fa-github fa-lg"></i>
+						</a>
+						<a class="btn btn-social-icon" href="https://www.instagram.com/bloop__doop/" target="_blank">
+							<i class="fab fa-instagram fa-lg"></i>
+						</a>
+						<a class="btn btn-social-icon" href="https://twitter.com/Bloop__Doop" target="_blank">
+							<i class="fab fa-twitter fa-lg"></i>
+						</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-sm-5" id="homeIMG">
-				<img class="img-fluid" src="/img/dp.jpg">
+			<!-- Landing Page -->
+			<div class="container col-10 " id="HomePage">
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-5 align-self-center">
+						<div class="row justify-content-start pl-1">
+							<div class="col-5">
+								<h1> Hello,</h1>
+							</div>
+							<div class="col-12">
+								<h1>I<span id="apos">'</span>m Saksham.</h1>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-5" id="homeIMG">
+						<img class="img-fluid" src="/img/dp.jpg">
+					</div>
+				</div>
+			</div>
+			<!-- CHANGE COLOR MODE -->
+			<div class="col-1 pr-0 ">
+				<div class="colorMode d-flex pr-0">
+					<div id="centerthisR" class="bg-danger p-2">
+						<a class="btn btn-social-icon">
+							<i class="fas fa-tint-slash"></i>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<!-- Main Content -->
-	<div class="container" id="Aboutme">
-		<div class="row row-content justify-content-center">
-			<h2 class="text-center section-heading"> About Me</h2>
-		</div>
-		<div class="row row-content p-5" id="Aboutme1">
+
+		<div class="row row-content justify-content-center" id="Aboutme">
 			<div class="col-12">
+				<h2 class="text-center section-heading"> About Me</h2>
+			</div>
+			<div class="col- pb-0" id="Aboutme1">
 				<h3 class="text-muted">Eat,{Code},Play,Repeat</h3>
 			<p>
 				I'm an enthusiastic Frontend Developer. I'm currently an ECE undergrad student at IIIT-Delhi. Over the years, I have found love for anything digital and making technology easy to use and accessible to everyone. Also, I love taking pictures.
@@ -92,7 +102,7 @@
 				</a>
 			</p>
 			</div>
-			<div class="col-12">
+			<div class="col-12 pt-0" id="Aboutme2">
 				<p>
 					Technology Stacks:
 					<ul class="row">
@@ -107,17 +117,11 @@
 				</p>
 			</div>
 		</div>
-	</div>
 
-
-
-
-
-	<div class="container" id="Projects">
-		<div class="row row-content justify-content-center">
-			<h2 class="section-heading">Projects</h2>
-		</div>
-		<div class="row row-content p-5">
+		<div class="row row-content justify-content-center" id="Projects">
+			<div class="col-12 text-center">
+				<h2 class="section-heading">Projects</h2>
+			</div>
 			<div class="col-12 col-sm-4">
 				<div class="card" id="project1">
 					<div class="card-body ">
@@ -149,7 +153,16 @@
 				</div>
 			</div>
 		</div>
+
+
 	</div>
+	
+
+
+
+
+
+
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -157,7 +170,8 @@
     <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
     <script>
     	ScrollReveal().reveal('.section-heading',{distance:"100px",duration:1500});
-    	ScrollReveal().reveal('#Aboutme1',{distance:"100px",duration:1500})
+    	ScrollReveal().reveal('#Aboutme1',{distance:"100px",duration:1500});
+    	ScrollReveal().reveal('#Aboutme2',{distance:"100px",duration:1500});
     	ScrollReveal().reveal('#project1',{distance:"100px",duration:1500});
     	ScrollReveal().reveal('#project2',{distance:"100px",duration:1500,delay:500});
     	ScrollReveal().reveal('#project3',{distance:"100px",duration:1500,delay:1000});
@@ -186,6 +200,9 @@
     			scroll=$(document).scrollTop();
     		});
     	});
+    </script>
+    <script>
+
     </script>
 </body>
 </html>
