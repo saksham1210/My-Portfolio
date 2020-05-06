@@ -1,16 +1,22 @@
 html{
 	scroll-behavior: smooth;
 }
+body{
+	background-color:white; 
+}
+.navbar{
+	background-color: #04ABDF;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
 #apos{
 	color:#04ABDF;
 	font-family: 'Varela Round', sans-serif;
 	font-size:120%;
 }
-#colorstrip{
-	height:0px;
-	border-bottom:solid 7px #04ABDF;
-}
 .nav-item{
+	font-size: 120%;
+	font-weight: 700;
 	padding:0% 5% 0% 5%;
 }
 .fa-home{
@@ -32,7 +38,10 @@ html{
 }
 .btn-social-icon{
 	display:block;
+	margin-top: 3px;
 	margin-bottom: 3px;
+/*	color:#00455B;*/
+	font-size: 100%;
 }
 .social-contacts{
 	position:fixed;
@@ -43,8 +52,8 @@ html{
 #centerthis{
 	margin-bottom: auto;
 	margin-top: auto;
-	border-bottom-right-radius: 20px;
-	border-top-right-radius: 20px;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
 }
 .card-body{
 	padding:3%;
@@ -59,5 +68,5 @@ html{
 	padding:7%;
 }
 .container{
-/*	margin-left: 70px;*/
+	margin-bottom: 40px;
 }

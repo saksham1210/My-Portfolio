@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@1,500&display=swap" rel="stylesheet">
@@ -19,10 +19,10 @@
 	<!-- PLANTS VS ZOMBIES MODAL -->
 	<div class="modal modal-lg">
 	</div>
-	<div id="colorstrip"></div>
-	<nav class="navbar navbar-light navbar-expand-sm bg-light mb-5">
+
+	<nav class="navbar navbar-light navbarScroll border-bottom border-dark navbar-expand-sm mb-5">
 		<a class="nav-link" href="/index.html">
-			<i class="fa fa-home fa-lg"></i>
+			<i class="fas fa-home fa-lg"></i>
 		</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
             <span class="navbar-toggler-icon"></span>
@@ -43,23 +43,23 @@
 	</nav>
 	<!-- Contact Strip -->
 	<section class="social-contacts d-none d-sm-flex pl-0">
-		<div id="centerthis" class="bg-warning">
+		<div id="centerthis" class="bg-warning p-2">
 			<a class="btn btn-social-icon" href="https://www.linkedin.com/in/sakshamdhull/" target="_blank">
-				<i class="fa fa-linkedin fa-lg"></i>
+				<i class="fab fa-linkedin fa-lg"></i>
 			</a>
 			<a class="btn btn-social-icon" href="https://github.com/saksham1210" target="_blank">
-				<i class="fa fa-github fa-lg"></i>
+				<i class="fab fa-github fa-lg"></i>
 			</a>
 			<a class="btn btn-social-icon" href="https://www.instagram.com/bloop__doop/" target="_blank">
-				<i class="fa fa-instagram fa-lg"></i>
+				<i class="fab fa-instagram fa-lg"></i>
 			</a>
 			<a class="btn btn-social-icon" href="https://twitter.com/Bloop__Doop" target="_blank">
-				<i class="fa fa-twitter fa-lg"></i>
+				<i class="fab fa-twitter fa-lg"></i>
 			</a>
 		</div>
 	</section>
 	<!-- Landing Page -->
-	<div class="container" id="HomePage">
+	<div class="container mr-0" id="HomePage">
 		<div class="row justify-content-center">
 			<div class="col-12 col-sm-5 align-self-center">
 				<div class="row justify-content-start pl-1">
@@ -82,15 +82,30 @@
 			<h2 class="text-center section-heading"> About Me</h2>
 		</div>
 		<div class="row row-content p-5" id="Aboutme1">
-			<h3 class="text-muted">Eat,{Code},Play,Repeat</h3>
+			<div class="col-12">
+				<h3 class="text-muted">Eat,{Code},Play,Repeat</h3>
 			<p>
 				I'm an enthusiastic Frontend Developer. I'm currently an ECE undergrad student at IIIT-Delhi. Over the years, I have found love for anything digital and making technology easy to use and accessible to everyone. Also, I love taking pictures.
-				<a class="text-dark d-flex text-decoration-none" href="https://www.instagram.com/bloop__doop/">
+				<a class="text-dark d-inline-block text-decoration-none" href="https://www.instagram.com/bloop__doop/">
 					Check them out here
-					<i class="fa fa-instagram fa-lg pl-2 pt-2"></i>
+					<i class="fab fa-instagram fa-lg pl-2 pt-2"></i>
 				</a>
 			</p>
-			
+			</div>
+			<div class="col-12">
+				<p>
+					Technology Stacks:
+					<ul class="row">
+						<li class="col-xs-6 col-sm-4">HTML</li>
+						<li class="col-xs-6 col-sm-4">CSS</li>
+						<li class="col-xs-6 col-sm-4">JavaScript</li>
+						<li class="col-xs-6 col-sm-4">Bootstrap</li>
+						<li class="col-xs-6 col-sm-4">Java</li>
+						<li class="col-xs-6 col-sm-4">Python</li>
+						<li class="col-xs-6 col-sm-4">Verilog</li>
+					</ul>
+				</p>
+			</div>
 		</div>
 	</div>
 
@@ -135,16 +150,42 @@
 			</div>
 		</div>
 	</div>
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
     <script>
     	ScrollReveal().reveal('.section-heading',{distance:"100px",duration:1500});
     	ScrollReveal().reveal('#Aboutme1',{distance:"100px",duration:1500})
     	ScrollReveal().reveal('#project1',{distance:"100px",duration:1500});
     	ScrollReveal().reveal('#project2',{distance:"100px",duration:1500,delay:500});
     	ScrollReveal().reveal('#project3',{distance:"100px",duration:1500,delay:1000});
+    </script>
+    <script>
+    	$(function(){
+    		var scroll = $(document).scrollTop();
+    		var navHeight =$(".navbarScroll").outerHeight();
+    		$(window).scroll(function(){
+    			var scrolled =$(document).scrollTop();
+    			if (scrolled>navHeight)
+    			{
+    				$(".navbarScroll").addClass("animate");
+    			}
+    			else{
+    				$(".navbarScroll").removeClass("animate");
+    			}
+    			if(scrolled>scroll)
+    			{
+    				$(".navbarScroll").removeClass("sticky-top");
+    			}
+    			else
+    			{
+    				$(".navbarScroll").addClass("sticky-top");
+    			}
+    			scroll=$(document).scrollTop();
+    		});
+    	});
     </script>
 </body>
 </html>
