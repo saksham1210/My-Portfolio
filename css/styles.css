@@ -1,6 +1,6 @@
 #colorstrip{
 	height:0px;
-	border-bottom:solid 5px #04ABDF;
+	border-bottom:solid 7px #04ABDF;
 }
 .nav-item{
 	padding:0% 5% 0% 5%;
@@ -13,5 +13,20 @@
 	border-radius: 150px;
 }
 .row h1{
-	font-size: 72px;
+	font-size: 450%;
+}
+.btn-social-icon{
+	display:block;
+	padding-top: :5%;
+	padding-bottom: 5%;
+	margin-bottom: 3px;
+}
+.social-contacts{
+	position:fixed;
+	padding :1%;
+	height:100%;
+}
+#centerthis{
+	margin-bottom: auto;
+	margin-top: auto;
 }
