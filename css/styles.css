@@ -3,16 +3,16 @@ html[data-theme='dark']{
 	--navbarColor:#64ffda;
 	--socialPanelColor:#FF5733;
 	--TextColor:white;
-	--cardColor:#FF5733;
-	--cardFooterColor:#E54C2B;
+	--cardFooterColor:#303C55;
+	--FAcolor:white;
 }
 html[data-theme='light']{
 	--background-color: white;
 	--navbarColor:#04ABDF;
 	--socialPanelColor:#FFC300;
 	--TextColor:black;
-	--cardColor:white;
 	--cardFooterColor:#F0F0F0;
+	--FAcolor:black;
 }
 html{
 	scroll-behavior: smooth;
@@ -22,7 +22,7 @@ body{
 	margin:0px;
 	padding:0%;
 }
-h1,h2,h3,p,li,span,a{
+h1,h2,h3,p,li,a span{
 	color:var(--TextColor)
 }
 .main,.row{
@@ -96,7 +96,7 @@ h1,h2,h3,p,li,span,a{
 	border-top-left-radius: 10px;
 }
 .card{
-	background-color: var(--cardColor);
+	background-color:var(--background-color);
 }
 .card-footer{
 	background-color: var(--cardFooterColor);
@@ -118,6 +118,9 @@ h1,h2,h3,p,li,span,a{
 }
 .container{
 	margin-bottom: 40px;
+}
+.color-change{
+	color: var(--FAcolor);
 }
 /*TOGGGLE SWITCH*/
 input[type=checkbox]{
