@@ -36,7 +36,7 @@
 				<li class="nav-item">
 					<a href="#" class="nav-link">Contact</a>
 				</li>
-				<li class="nav-item pr-0 pl-0">
+				<li class="nav-item pr-0 pl-0 pr-sm-0 pl-sm-0">
 					<a ref="#" class="nav-link">Dark Mode</a>
 				</li>
 				<li class="nav-item pl-0">
@@ -45,6 +45,46 @@
 			</ul>			
 		</div>
 	</nav>
+
+<!-- MODAL PLANTS VS ZOMBIES -->
+	<div class="modal fade" id="PlantsModal" role="dialog">
+		<div class="modal-xl modal-dialog modal-dialog-centered"  role="content">
+			<div class="model-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Plants Vs Zombies</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="row">
+							<div class="img-fluid col-12 col-sm-6">
+								<img src="" alt="Plants vs Zombies Image">
+							</div>
+							<div class="col-12 col-sm-6">
+								Developed own clone of the Plants vs. Zombies game using Java (JDK-11) and JavaFX (2.0).
+								
+								<a class="tooltip-test text-decoration-none" title="Click here" data-placement="right" href="https://drive.google.com/file/d/1UhpV6NkVzcyv_fXAdLRY7XQQwwHtzQcS/view?usp=sharing"><h4>UML Diagram</h4></a>
+								
+								<a class="tooltip-test text-decoration-none" title="Click here" data-placement="right" href="https://drive.google.com/file/d/1gxsR7qXTe7Nq-eJft4oeAiM1Wb9dYIME/view?usp=sharing"><h4>Use Case</h4></a>
+								<a class="tooltip-test text-decoration-none" title="Click here" data-placement="right" href="https://github.com/saksham1210/PlantsVsZombies"><h4 class="d-inline-block">Github Repo</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
 	<div class="container-fluid w-100 main">
 
 		<!-- ROW-1 -->
@@ -88,15 +128,6 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- CHANGE COLOR MODE -->
-<!-- 			<div class="col-1 pr-0 ">
-				<div class="colorMode d-flex pr-0">
-					<div id="centerthisR" class=" p-2">
-						<input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
-					</div>
-				</div>
-			</div> -->
 		</div>
 
 		<!-- ABOUT ME -->
@@ -187,7 +218,16 @@
     <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
     <script src="js/script.js"></script>
     <script>
-
+        $(document).ready(function()
+        {
+            $("#project1").click(function()
+            {
+                $("#PlantsModal").modal("show");
+            });
+        });
+        $(function () {
+		  $('.tooltip-test').tooltip();
+		});
     </script>
 </body>
 </html>

@@ -2,12 +2,12 @@ html[data-theme='dark']{
 	--background-color: #0a192f;
 	--navbarColor:#64ffda;
 	--socialPanelColor:#FF5733;
-	--TextColor:white;
+	--TextColor:floralwhite;
 	--cardFooterColor:#303C55;
-	--FAcolor:white;
+	--FAcolor:floralwhite;
 }
 html[data-theme='light']{
-	--background-color: white;
+	--background-color: floralwhite;
 	--navbarColor:#04ABDF;
 	--socialPanelColor:#FFC300;
 	--TextColor:black;
@@ -22,7 +22,7 @@ body{
 	margin:0px;
 	padding:0%;
 }
-h1,h2,h3,p,a span,li{
+h1,h2,h3,h4,p,a span,li{
 	color:var(--TextColor)
 }
 .main,.row{
@@ -53,7 +53,7 @@ h1,h2,h3,p,a span,li{
 }
 #homeIMG img{
 	padding:14%;
-	border-radius: 150px;
+	border-radius: 30%;
 }
 .row h1{
 	font-size: 450%;
@@ -121,6 +121,21 @@ h1,h2,h3,p,a span,li{
 }
 .color-change{
 	color: var(--FAcolor);
+}
+
+.modal-header {
+  background: var(--background-color);
+  color: var(--TextColor);
+}
+.modal-header .close {
+  color: var(--TextColor);
+}
+
+.modal-body {
+  background: var(--background-color);
+}
+.modal-dialog{
+	pointer-events: all;
 }
 /*TOGGGLE SWITCH*/
 input[type=checkbox]{
