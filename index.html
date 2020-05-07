@@ -36,12 +36,28 @@
 				<li class="nav-item">
 					<a href="#" class="nav-link">Contact</a>
 				</li>
-				<li class="nav-item pr-0 pl-0 pr-sm-0 pl-sm-0">
-					<a ref="#" class="nav-link">Dark Mode</a>
+				<!-- <li class="nav-item pr-0 pr-sm-0 ">
+
+					<a ref="#" class="nav-link"></a>
+				</li> -->
+				<li class="nav-item">
+					<div class="container-fluid pr-0 pl-0">
+						<div class="row align-items-center">
+							<div class="col-4 pl-0 pr-0">
+								<span class="fas fa-lightbulb fa-lg" id="onBulb"></span>
+							</div>
+							<div class="col-4 pl-0">
+								<input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+							</div>
+							<div class="col-4 ">
+								<i class="far fa-lightbulb fa-lg" id="offBulb"></i>
+							</div>
+						</div>
+					</div>
 				</li>
-				<li class="nav-item pl-0">
-					<input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
-				</li>
+				<!-- <li class="nav-item pr-0 pr-sm-0 ">
+					<a ref="#" class="nav-link"></a>
+				</li> -->
 			</ul>			
 		</div>
 	</nav>
@@ -63,12 +79,19 @@
 								<img src="" alt="Plants vs Zombies Image">
 							</div>
 							<div class="col-12 col-sm-6">
-								Developed own clone of the Plants vs. Zombies game using Java (JDK-11) and JavaFX (2.0).
-								
-								<a class="tooltip-test text-decoration-none" title="Click here" data-placement="right" href="https://drive.google.com/file/d/1UhpV6NkVzcyv_fXAdLRY7XQQwwHtzQcS/view?usp=sharing"><h4>UML Diagram</h4></a>
-								
-								<a class="tooltip-test text-decoration-none" title="Click here" data-placement="right" href="https://drive.google.com/file/d/1gxsR7qXTe7Nq-eJft4oeAiM1Wb9dYIME/view?usp=sharing"><h4>Use Case</h4></a>
-								<a class="tooltip-test text-decoration-none" title="Click here" data-placement="right" href="https://github.com/saksham1210/PlantsVsZombies"><h4 class="d-inline-block">Github Repo</h4></a>
+								<p>
+									Developed own clone of the Plants vs. Zombies game using Java (JDK-11) and JavaFX (2.0).
+								</p>
+								<h4>Bonus Functionality</h4>
+								<p>
+									We have made a special sun, which will drop in between the game randomly and will give you a super boost!.<br>The normal sun gives you +25 but this will make the value of Sun tokens equal to 200 no matter what the previous value was.
+								</p>
+								<br>
+								<a class="tooltip-test text-decoration-none" title="Click me!" data-placement="right" href="https://drive.google.com/file/d/1UhpV6NkVzcyv_fXAdLRY7XQQwwHtzQcS/view?usp=sharing"><h4 class="d-inline-block">-UML Diagram</h4></a>
+								<br>
+								<a class="tooltip-test text-decoration-none" title="Click me!" data-placement="right"href="https://drive.google.com/file/d/1gxsR7qXTe7Nq-eJft4oeAiM1Wb9dYIME/view?usp=sharing"><h4 class="d-inline-block">-Use Case</h4></a>
+								<br>
+								<a class="tooltip-test text-decoration-none" title="Click me!" data-placement="right" href="https://github.com/saksham1210/PlantsVsZombies"><h4 class="d-inline-block">-Github Repo.</h4></a>
 							</div>
 						</div>
 					</div>
@@ -77,7 +100,36 @@
 		</div>
 	</div>
 
-
+	<!-- EXPAZE MODAL -->
+	<div class="modal fade" id="ExpazeModal" role="dialog">
+		<div class="modal-xl vw-100 modal-dialog modal-dialog-centered"  role="content">
+			<div class="model-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Expaze</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="row">
+							<div class="img-fluid col-12 col-sm-6">
+								<img src="img/expazeGamePlay.png" alt="Expaze Image">
+							</div>
+							<div class="col-12 col-sm-6">
+								<p>A two-player game in which one has to overcome the obstacles while coordinating with the other player, racing against the time.
+								</p>
+								<p>The game was developed using the Unity 3D during</p><p>Gaming Hackathon India Game Summit - IGS2018 IIITD.
+								</p>
+								<br>
+								<a class="text-decoration-none" href="https://expaze.itch.io/expazegame"><h4 class="d-inline-block">Download Now!</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -138,9 +190,9 @@
 				<h2 class="text-center section-heading"> About Me</h2>
 			</div>
 			<div class="col- pb-0" id="Aboutme1">
-				<h3 class="">Eat,{Code},Play,Repeat</h3>
+				<h3 class="text-warning">Eat,{Code},Play,Repeat</h3>
 			<p>
-				I'm an enthusiastic Frontend Developer. I'm currently an ECE undergrad student at IIIT-Delhi. Over the years, I have found love for anything digital and making technology easy to use and accessible to everyone. Also, I love taking pictures.
+				I'm an enthusiastic Front-end Developer. I'm currently an ECE undergrad student at IIIT-Delhi. Over the years, I have found love for anything digital and making technology easy to use and accessible to everyone. Also, I love taking pictures.
 				<a class="text-dark d-inline-block text-decoration-none" href="https://www.instagram.com/bloop__doop/"><span>
 					Check them out here --></span>
 					<i class="fab fa-instagram fa-lg pl-2 pt-2 color-change"></i>
@@ -174,9 +226,9 @@
 				<div class="card" id="project1">
 					<div class="card-body ">
 						<img class="img-fluid" src="/img/pvz1.jpg">
-						<div class="card-footer text-center">
-							<a class="btn stretched-link"><span>Plants Vs Zombies</span></a>
-						</div>
+					</div>
+					<div class="card-footer text-center">
+						<a class="btn stretched-link"><span>Plants Vs Zombies</span></a>
 					</div>
 				</div>
 			</div>
@@ -223,6 +275,10 @@
             $("#project1").click(function()
             {
                 $("#PlantsModal").modal("show");
+            });
+            $("#project2").click(function()
+            {
+                $("#ExpazeModal").modal("show");
             });
         });
         $(function () {

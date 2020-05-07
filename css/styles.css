@@ -5,14 +5,18 @@ html[data-theme='dark']{
 	--TextColor:floralwhite;
 	--cardFooterColor:#303C55;
 	--FAcolor:floralwhite;
+	--BulbColoroff:black;
+	--BulbColoron:#64ffda;
 }
 html[data-theme='light']{
-	--background-color: floralwhite;
+	--background-color: white;
 	--navbarColor:#04ABDF;
 	--socialPanelColor:#FFC300;
 	--TextColor:black;
 	--cardFooterColor:#F0F0F0;
 	--FAcolor:black;
+	--BulbColoroff:#04ABDF;
+	--BulbColoron:black;
 }
 html{
 	scroll-behavior: smooth;
@@ -21,6 +25,12 @@ body{
 	background-color:var(--background-color); 
 	margin:0px;
 	padding:0%;
+}
+#offBulb{
+	color:var(--BulbColoroff);
+}
+#onBulb{
+	color:var(--BulbColoron);
 }
 h1,h2,h3,h4,p,a span,li{
 	color:var(--TextColor)
@@ -136,6 +146,9 @@ h1,h2,h3,h4,p,a span,li{
 }
 .modal-dialog{
 	pointer-events: all;
+}
+img{
+	max-width: 100%;
 }
 /*TOGGGLE SWITCH*/
 input[type=checkbox]{
