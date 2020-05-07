@@ -22,7 +22,7 @@ body{
 	margin:0px;
 	padding:0%;
 }
-h1,h2,h3,p,li,a span{
+h1,h2,h3,p,a span,li{
 	color:var(--TextColor)
 }
 .main,.row{
@@ -40,9 +40,9 @@ h1,h2,h3,p,li,a span{
 	font-size:120%;
 }
 .nav-item{
-	font-size: 120%;
-	font-weight: 700;
-	padding:0% 5% 0% 5%;
+	font-size: 110%;
+	font-weight: 500;
+	padding:0% 7% 0% 7%;
 }
 .fa-home{
 	color:black;
