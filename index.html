@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme='light'>
 <head>
 	<!-- Required meta tags always come first -->
     <meta charset="utf-8">
@@ -8,9 +8,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.ico">
     <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+<!--     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css"> -->
+<!--     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"> -->
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@1,500&display=swap" rel="stylesheet">
     <title>Hello There !</title>
@@ -46,8 +47,8 @@
 
 		<!-- Contact Strip -->
 			<div class="col-1 pl-0">
-				<div class="social-contacts d-flex pl-0">
-					<div id="centerthisL" class="bg-warning p-2">
+				<div class="social-contacts d-sm-flex d-none pl-0">
+					<div id="centerthisL" class="p-2">
 						<a class="btn btn-social-icon" href="https://www.linkedin.com/in/sakshamdhull/" target="_blank">
 							<i class="fab fa-linkedin fa-lg"></i>
 						</a>
@@ -85,10 +86,11 @@
 			<!-- CHANGE COLOR MODE -->
 			<div class="col-1 pr-0 ">
 				<div class="colorMode d-flex pr-0">
-					<div id="centerthisR" class="bg-danger p-2">
-						<a class="btn btn-social-icon">
+					<div id="centerthisR" class=" p-2">
+						<input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+<!-- 						<button class="btn btn-social-icon" id="colorButton" onclick="DarkMode()">
 							<i class="fas fa-tint-slash"></i>
-						</a>
+						</button> -->
 					</div>
 				</div>
 			</div>
@@ -178,38 +180,9 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <!-- <script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script> -->
 <!--     <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script> -->
+    <script src="js/script.js"></script>
     <script>
-    	ScrollReveal().reveal('.section-heading',{distance:"100px",duration:1500});
-    	ScrollReveal().reveal('#Aboutme1',{distance:"100px",duration:1500});
-    	ScrollReveal().reveal('#Aboutme2',{distance:"100px",duration:1500});
-    	ScrollReveal().reveal('#project1',{distance:"100px",duration:1500});
-    	ScrollReveal().reveal('#project2',{distance:"100px",duration:1500,delay:500});
-    	ScrollReveal().reveal('#project3',{distance:"100px",duration:1500,delay:1000});
-    </script>
-    <script>
-    	$(function(){
-    		var scroll = $(document).scrollTop();
-    		var navHeight =$(".navbarScroll").outerHeight();
-    		$(window).scroll(function(){
-    			var scrolled =$(document).scrollTop();
-    			if (scrolled>navHeight)
-    			{
-    				$(".navbarScroll").addClass("animate");
-    			}
-    			else{
-    				$(".navbarScroll").removeClass("animate");
-    			}
-    			if(scrolled>scroll)
-    			{
-    				$(".navbarScroll").removeClass("sticky-top");
-    			}
-    			else
-    			{
-    				$(".navbarScroll").addClass("sticky-top");
-    			}
-    			scroll=$(document).scrollTop();
-    		});
-    	});
+
     </script>
 </body>
 </html>

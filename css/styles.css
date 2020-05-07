@@ -1,22 +1,41 @@
+html[data-theme='dark']{
+	--background-color: #0a192f;
+	--navbarColor:#64ffda;
+	--socialPanelColor:#FF5733;
+	--TextColor:white;
+	--cardColor:#FF5733;
+	--cardFooterColor:#E54C2B;
+}
+html[data-theme='light']{
+	--background-color: white;
+	--navbarColor:#04ABDF;
+	--socialPanelColor:#FFC300;
+	--TextColor:black;
+	--cardColor:white;
+	--cardFooterColor:#F0F0F0;
+}
 html{
 	scroll-behavior: smooth;
 }
 body{
-	background-color:white; 
+	background-color:var(--background-color); 
 	margin:0px;
 	padding:0%;
+}
+h1,h2,h3,p,li,span,a{
+	color:var(--TextColor)
 }
 .main,.row{
 	margin:0px;
 	padding:0%;
 }
 .navbar{
-	background-color: #04ABDF;
+	background-color: var(--navbarColor);
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
 #apos{
-	color:#04ABDF;
+	color:var(--navbarColor);
 	font-family: 'Varela Round', sans-serif;
 	font-size:120%;
 }
@@ -68,12 +87,19 @@ body{
 	margin-top: auto;
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px;
+	background-color: var(--socialPanelColor);
 }
 #centerthisR{
 	margin-bottom: auto;
 	margin-top: auto;
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
+}
+.card{
+	background-color: var(--cardColor);
+}
+.card-footer{
+	background-color: var(--cardFooterColor);
 }
 .card-body{
 	padding:3%;
@@ -86,9 +112,54 @@ body{
 #Aboutme,#Projects,#Aboutme1,#Aboutme2{
 	padding:7%;
 }
+
 #Aboutme1,#Aboutme2{
 	font-size: 150%;
 }
 .container{
 	margin-bottom: 40px;
 }
+/*TOGGGLE SWITCH*/
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+	background:black;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 30px;
+	height: 18px;
+	background: black;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 10px;
+	height: 12px;
+	background: #fff;
+	border-radius: 100px;
+	transition: 0.4s;
+}
+
+input:checked + label {
+	background: green;
+}
+
+input:checked + label:after {
+	left: calc(100% - 3px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 10px;
+}
+
