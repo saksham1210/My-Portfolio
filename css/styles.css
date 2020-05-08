@@ -173,13 +173,12 @@ footer{
 	/*font-size: 300%;*/
 	font-family: 'Lato', sans-serif;
 	text-align:center;
-	padding-top:20%;
 }
 .contactbottom,.fa-bars{
 	color:var(--FAcolor);
 }
 .letsconnect{
-	font-size: 100%;
+	font-size: 190%;
 	text-decoration:line-through; 
 }
 .letsconnect a{
@@ -187,7 +186,6 @@ footer{
 	color:var(--TextColor);
 }
 .letsconnect:hover{
-	font-size: 100%;
 	color:var(--AposColor);
 	text-decoration:none;
 	cursor:pointer;
