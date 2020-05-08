@@ -1,22 +1,26 @@
 html[data-theme='dark']{
 	--background-color: #0a192f;
-	--navbarColor:#64ffda;
+	--navbarColor:#0a192f/*#64ffda*/;
 	--socialPanelColor:#FF5733;
 	--TextColor:floralwhite;
 	--cardFooterColor:#303C55;
 	--FAcolor:floralwhite;
-	--BulbColoroff:black;
-	--BulbColoron:#64ffda;
+	--BulbColoroff:floralwhite;
+	--BulbColoron:#0a192f/*#64ffda*/;
+	--AposColor:#FF5733;
+	--navItemColor:floralwhite;
 }
 html[data-theme='light']{
 	--background-color: white;
-	--navbarColor:#04ABDF;
+	--navbarColor:white;
 	--socialPanelColor:#FFC300;
 	--TextColor:black;
 	--cardFooterColor:#F0F0F0;
 	--FAcolor:black;
-	--BulbColoroff:#04ABDF;
+	--BulbColoroff:white/*#04ABDF*/;
 	--BulbColoron:black;
+	--AposColor:#04ABDF;
+	--navItemColor:black;
 }
 html{
 	scroll-behavior: smooth;
@@ -25,6 +29,12 @@ body{
 	background-color:var(--background-color); 
 	margin:0px;
 	padding:0%;
+}
+#colorStrip{
+	width:100%;
+	background-color: var(--AposColor);
+	color: var(--AposColor);
+
 }
 #offBulb{
 	color:var(--BulbColoroff);
@@ -45,17 +55,21 @@ h1,h2,h3,h4,p,a span,li{
 	border-bottom-left-radius: 5px;
 }
 #apos{
-	color:var(--navbarColor);
+	color: var(--AposColor);
 	font-family: 'Varela Round', sans-serif;
 	font-size:120%;
 }
 .nav-item{
-	font-size: 110%;
-	font-weight: 500;
+
+	font-size: 120%;
+	font-weight: 600;
 	padding:0% 7% 0% 7%;
 }
+.navbar-light .navbar-nav .nav-link{
+	color:var(--navItemColor);
+}
 .fa-home{
-	color:black;
+	color:var(--navItemColor);
 }
 #HomePage{
 	padding:10% 0% 10% 0%;
@@ -99,12 +113,7 @@ h1,h2,h3,h4,p,a span,li{
 	border-top-right-radius: 10px;
 	background-color: var(--socialPanelColor);
 }
-#centerthisR{
-	margin-bottom: auto;
-	margin-top: auto;
-	border-bottom-left-radius: 10px;
-	border-top-left-radius: 10px;
-}
+
 .card{
 	background-color:var(--background-color);
 }
@@ -147,6 +156,9 @@ h1,h2,h3,h4,p,a span,li{
 .modal-dialog{
 	pointer-events: all;
 }
+.qoute{
+	color:var(--socialPanelColor);
+}
 img{
 	max-width: 100%;
 }
@@ -182,7 +194,7 @@ label:after {
 }
 
 input:checked + label {
-	background: green;
+	background:#FF5733 ;
 }
 
 input:checked + label:after {
