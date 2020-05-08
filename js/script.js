@@ -16,9 +16,9 @@ ScrollReveal().reveal('.section-heading',{distance:"100px",duration:1500});
 ScrollReveal().reveal('#Aboutme1',{distance:"100px",duration:1500});
 ScrollReveal().reveal('#Aboutme2',{distance:"100px",duration:1500});
 ScrollReveal().reveal('#project1',{distance:"100px",duration:1500});
-ScrollReveal().reveal('#project2',{distance:"100px",duration:1500,delay:300});
-ScrollReveal().reveal('#project3',{distance:"100px",duration:1500,delay:600});
-ScrollReveal().reveal('#Contactme',{distance:"100px",duration:1500,delay:600});
+ScrollReveal().reveal('#project2',{distance:"100px",duration:1500});
+ScrollReveal().reveal('#project3',{distance:"100px",duration:1500});
+ScrollReveal().reveal('#Contactme',{distance:"100px",duration:1500});
 $(function(){
 	var scroll = $(document).scrollTop();
 	var navHeight =$(".navbarScroll").outerHeight();

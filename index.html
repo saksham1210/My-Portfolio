@@ -20,7 +20,6 @@
 </head>
 <body>
 	<div id="colorStrip">he</div>
-
 	<nav class="navbar navbar-light navbarScroll navbar-expand-sm mb-5">
 		<a class="nav-link navabr-brand" href="/index.html">
 			<i class="fas fa-home fa-lg"></i>
@@ -72,7 +71,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="img-fluid col-12 col-sm-6">
-								<img src="" alt="Plants vs Zombies Image">
+								<img src="/img/pvz1.jpg" alt="Plants vs Zombies Image">
 							</div>
 							<div class="col-12 col-sm-6">
 								<p>
@@ -127,6 +126,38 @@
 		</div>
 	</div>
 
+<!-- MUSICAL DANCE FLOOR MODAL -->
+	<!-- EXPAZE MODAL -->
+	<div class="modal fade" id="MusicalModal" role="dialog">
+		<div class="modal-xl vw-100 modal-dialog modal-dialog-centered"  role="content">
+			<div class="model-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Musical Dance Floor</h3>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="row">
+							<div class="img-fluid col-12 col-sm-6">
+								<img src="img/DanceFloor.jpg" alt="Expaze Image">
+							</div>
+							<div class="col-12 col-sm-6">
+								<p> A euphoric user human-computer interaction experience which literally enables you to dance to your own sound. The room resonates with music produced according to the user movement on the floor. 
+								</p>
+								<p>The project is completely made using the Arduino and Basic Ultrasonic Sensors and some basic libraries to play the sounds.
+								</p>
+								<br>
+								<a class="tooltip-test text-decoration-none" title="Click me!" data-placement="right" href="https://github.com/saksham1210/Musical-Dance-Floor"><h4 class="d-inline-block">-Github Repo.</h4></a>
+								<a class="tooltip-test text-decoration-none" title="Click me!" data-placement="right" href="https://drive.google.com/open?id=1XWfeOSxvlZjp9DogHuUwHuPLlrZrQRjm"><h4 class="d-inline-block">-Video link</h4></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -241,7 +272,7 @@
 			<div class="col-12 col-sm-4">
 				<div class="card" id="project3">
 					<div class="card-body">
-						<img class="img-fluid" src="">
+						<img class="img-fluid" src="img/DanceFloor.jpg">
 					</div>
 					<div class="card-footer text-center">
 						<a class="btn stretched-link"><span>Musical Dance Floor</span></a>
@@ -307,6 +338,11 @@
             {
                 $("#ExpazeModal").modal("show");
             });
+            $("#project3").click(function()
+            {
+                $("#MusicalModal").modal("show");
+            });
+            
         });
         $(function () {
 		  $('.tooltip-test').tooltip();
