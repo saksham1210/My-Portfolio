@@ -26,25 +26,18 @@ html{
 	scroll-behavior: smooth;
 	
 }
-.scroll-snap{
-	scroll-snap-type:y mandatory;
-}
-section{
-/*	height:100vh;
-	width:100vw;*/
-	scroll-snap-align:start;
-}
+
 body{
 	background-color:var(--background-color); 
 	margin:0px;
 	padding:0%;
 }
-#colorStrip{
+/*#colorStrip{
 	width:100%;
 	background-color: var(--AposColor);
 	color: var(--AposColor);
 
-}
+}*/
 #offBulb{
 	color:var(--BulbColoroff);
 }
@@ -52,7 +45,7 @@ body{
 	color:var(--BulbColoron);
 }
 h1,h2,h3,h4,p,a span,li{
-	color:var(--TextColor)
+	color:var(--TextColor);
 }
 .main,.row{
 	margin:0px;
@@ -72,10 +65,11 @@ h1,h2,h3,h4,p,a span,li{
 
 	font-size: 120%;
 	font-weight: 600;
-	padding:0% 7% 0% 7%;
+/*	padding:0% 7% 0% 7%;*/
 }
-.navbar-light .navbar-nav .nav-link{
+.navbar-nav .nav-link{
 	color:var(--navItemColor);
+	padding:20px;
 }
 .fa-home{
 	color:var(--navItemColor);
@@ -84,9 +78,29 @@ h1,h2,h3,h4,p,a span,li{
 	padding:10% 0% 10% 0%;
 	margin-bottom: 100px;
 }
+/*#homerow{
+	background-image: url("../img/sunset.jpeg");
+	height: 100vh;
+	width:100vw;
+	   Create the parallax scrolling effect 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}*/
+.img-parallax {
+  width: 100vmax;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  pointer-events: none
+}
 #homeIMG img{
-	padding:14%;
+	/*padding:14%*/;
 	border-radius: 30%;
+	border:5px solid var(--socialPanelColor);
 }
 .row h1{
 	font-size: 450%;
@@ -190,7 +204,6 @@ footer{
 	color:var(--TextColor);
 }
 .letsconnect:hover{
-
 	cursor:pointer;
 }
 #slash{
@@ -249,4 +262,5 @@ input:checked + label:after {
 label:active:after {
 	width: 10px;
 }
+
 
