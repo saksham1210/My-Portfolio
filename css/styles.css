@@ -133,6 +133,9 @@ h1,h2,h3,h4,p,a span,li{
 .card-body{
 	padding:3%;
 }
+.card:hover{
+	cursor:pointer;
+}
 .section-heading{
 	font-size: 380%;
 	font-family: 'Muli', sans-serif;
@@ -179,19 +182,23 @@ footer{
 }
 .letsconnect{
 	font-size: 190%;
-	text-decoration:line-through; 
+	background-color: var(--socialPanelColor);
+	border-radius: 7%;
 }
 .letsconnect a{
 	text-decoration: none;
 	color:var(--TextColor);
 }
 .letsconnect:hover{
-	color:var(--AposColor);
-	text-decoration:none;
+
 	cursor:pointer;
 }
-#dot{
+#slash{
 	color: var(--AposColor);
+	font-weight: 1000;
+}
+#hello_contact{
+	font-size: 200%;
 }
 
 
