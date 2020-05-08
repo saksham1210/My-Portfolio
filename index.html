@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@1,500&display=swap" rel="stylesheet">
     <title>Hello There !</title>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div id="colorStrip">he</div>
@@ -36,12 +37,8 @@
 					<a href="#Projects" class="nav-link">Projects</a>
 				</li>
 				<li class="nav-item">
-					<a href="#" class="nav-link">Contact</a>
+					<a href="#Contactme" class="nav-link">Contact</a>
 				</li>
-				<!-- <li class="nav-item pr-0 pr-sm-0 ">
-
-					<a ref="#" class="nav-link"></a>
-				</li> -->
 				<li class="nav-item">
 					<div class="container-fluid pr-0 pl-0">
 						<div class="row align-items-center align-self-center">
@@ -57,9 +54,6 @@
 						</div>
 					</div>
 				</li>
-				<!-- <li class="nav-item pr-0 pr-sm-0 ">
-					<a ref="#" class="nav-link"></a>
-				</li> -->
 			</ul>			
 		</div>
 	</nav>
@@ -139,26 +133,26 @@
 
 
 
-	<div class="container-fluid w-100 main">
+	<div class="container-fluid w-100 main scroll-snap">
 
 		<!-- ROW-1 -->
 		<!-- Landing Page -->
-		<div class="row w-100">
+		<section class="row w-100">
 
 		<!-- Contact Strip -->
 			<div class="col-1 pl-0">
 				<div class="social-contacts d-sm-flex d-none pl-0">
 					<div id="centerthisL" class="p-2">
-						<a class="btn btn-social-icon" href="https://www.linkedin.com/in/sakshamdhull/" target="_blank">
+						<a class="btn btn-social-icon btn-social-icon-custom" href="https://www.linkedin.com/in/sakshamdhull/" target="_blank">
 							<i class="fab fa-linkedin fa-lg"></i>
 						</a>
-						<a class="btn btn-social-icon" href="https://github.com/saksham1210" target="_blank">
+						<a class="btn btn-social-icon btn-social-icon-custom" href="https://github.com/saksham1210" target="_blank">
 							<i class="fab fa-github fa-lg"></i>
 						</a>
-						<a class="btn btn-social-icon" href="https://www.instagram.com/bloop__doop/" target="_blank">
+						<a class="btn btn-social-icon btn-social-icon-custom" href="https://www.instagram.com/bloop__doop/" target="_blank">
 							<i class="fab fa-instagram fa-lg"></i>
 						</a>
-						<a class="btn btn-social-icon" href="https://twitter.com/Bloop__Doop" target="_blank">
+						<a class="btn btn-social-icon btn-social-icon-custom" href="https://twitter.com/Bloop__Doop" target="_blank">
 							<i class="fab fa-twitter fa-lg"></i>
 						</a>
 					</div>
@@ -170,7 +164,7 @@
 					<div class="col-12 col-sm-5 align-self-center">
 						<div class="row justify-content-start pl-1">
 							<div class="col-5">
-								<h1> Hello,</h1>
+								<h1 id="hello"> Hello,</h1>
 							</div>
 							<div class="col-12 ">
 								<h1>I<span id="apos">'</span>m Saksham.</h1>
@@ -182,12 +176,12 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
 		<!-- ABOUT ME -->
 		<!-- ROW-2 -->
 
-		<div class="row row-content justify-content-center" id="Aboutme">
+		<section class="row row-content justify-content-center" id="Aboutme">
 			<div class="col-12">
 				<h2 class="text-center section-heading"> About Me</h2>
 			</div>
@@ -215,12 +209,12 @@
 					</ul>
 				</p>
 			</div>
-		</div>
+		</section>
 
 		<!-- PROJECTS -->
 		<!-- ROW-3 -->
 
-		<div class="row row-content justify-content-center" id="Projects">
+		<section class="row row-content justify-content-center" id="Projects">
 			<div class="col-12 text-center">
 				<h2 class="section-heading">Projects</h2>
 			</div>
@@ -256,9 +250,40 @@
 			</div>
 		</div>
 		<!-- PROJECTS ROW END -->
-	</div>
+	</section>
 
+	<footer>
+		<section id="Contactme">
+			<div class="container align-items-center">
+				<div class="row">
+					<div class="col-12">
+						<h1 id="hello_contact">hello<span id="dot">.</span></h1>
+					</div>
+					<div class="col-12">
+						<p>Like what you see? Got a project/suggestion?</p>
+					</div>
+					<div class="col-12">
+						<p class="letsconnect"><a href="mailto:saksham18186@iiitd.ac.in">Let's Connect</a></p>
+					</div>
+					<div class="vw-100 col-12 align-items-center">
+						<a class="btn btn-social-icon" href="https://www.linkedin.com/in/sakshamdhull/" target="_blank">
+							<i class="fab fa-linkedin fa-lg contactbottom"></i>
+						</a>
+						<a class="btn btn-social-icon" href="https://github.com/saksham1210" target="_blank">
+							<i class="fab fa-github fa-lg contactbottom"></i>
+						</a>
+						<a class="btn btn-social-icon" href="https://www.instagram.com/bloop__doop/" target="_blank">
+							<i class="fab fa-instagram fa-lg contactbottom"></i>
+						</a>
+						<a class="btn btn-social-icon contactbottom" href="https://twitter.com/Bloop__Doop" target="_blank">
+							<i class="fab fa-twitter fa-lg contactbottom"></i>
+						</a>
+					</div> 
 
+				</div>
+			</div>
+		</section>
+	</footer>
 <!-- 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

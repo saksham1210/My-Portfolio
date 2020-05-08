@@ -30,8 +30,8 @@ html{
 	scroll-snap-type:y mandatory;
 }
 section{
-	height:100vh;
-	width:100vw;
+/*	height:100vh;
+	width:100vw;*/
 	scroll-snap-align:start;
 }
 body{
@@ -90,11 +90,12 @@ h1,h2,h3,h4,p,a span,li{
 }
 .row h1{
 	font-size: 450%;
-	/*font-family: 'Muli', sans-serif;*/
-	font-family: 'Varela Round', sans-serif;
-/*	color: #04ABDF;*/
+	font-family: 'Lato', sans-serif;
 }
-.btn-social-icon{
+#hello{
+	font-size:600%;
+}
+.btn-social-icon-custom{
 	display:block;
 	margin-top: 3px;
 	margin-bottom: 3px;
@@ -168,6 +169,35 @@ h1,h2,h3,h4,p,a span,li{
 .qoute{
 	color:var(--socialPanelColor);
 }
+footer{
+	/*font-size: 300%;*/
+	font-family: 'Lato', sans-serif;
+	text-align:center;
+	padding-top:20%;
+}
+.contactbottom,.fa-bars{
+	color:var(--FAcolor);
+}
+.letsconnect{
+	font-size: 100%;
+	text-decoration:line-through; 
+}
+.letsconnect a{
+	text-decoration: none;
+	color:var(--TextColor);
+}
+.letsconnect:hover{
+	font-size: 100%;
+	color:var(--AposColor);
+	text-decoration:none;
+	cursor:pointer;
+}
+#dot{
+	color: var(--AposColor);
+}
+
+
+
 img{
 	max-width: 100%;
 }
