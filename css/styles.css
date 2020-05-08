@@ -191,30 +191,18 @@ footer{
 	font-family: 'Lato', sans-serif;
 	text-align:center;
 }
-.contactbottom,.fa-bars{
+#contactpara,.contactbottom,.fa-bars{
 	color:var(--FAcolor);
 }
-.letsconnect{
-	font-size: 190%;
-	background-color: var(--socialPanelColor);
-	border-radius: 7%;
+#contactpara{
+	font-family: 'Varela Round', sans-serif;
+	font-size:130%;
 }
-.letsconnect a{
-	text-decoration: none;
-	color:var(--TextColor);
-}
-.letsconnect:hover{
-	cursor:pointer;
-}
+
 #slash{
 	color: var(--AposColor);
 	font-weight: 1000;
 }
-#hello_contact{
-	font-size: 200%;
-}
-
-
 
 img{
 	max-width: 100%;
