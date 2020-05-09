@@ -177,6 +177,7 @@ footer{
 
 img{
 	max-width: 100%;
+	object-fit: contain;
 }
 /*TOGGGLE SWITCH*/
 input[type=checkbox]{

@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" href="favicon.ico">
 <!--     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
@@ -310,7 +310,6 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script> -->
-    <script src="js/script.js"></script>
     <script>
         $(document).ready(function()
         {
@@ -337,11 +336,9 @@
 		checkbox.addEventListener('change', function(){
 			console.log(document.documentElement.getAttribute('data-theme'));
 			if (this.checked){
-				// trans();
 				document.documentElement.setAttribute('data-theme', 'dark');
 			}
 			else{
-				// trans();
 				document.documentElement.setAttribute('data-theme', 'light');
 			}
 		});
