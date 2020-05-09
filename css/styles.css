@@ -32,12 +32,7 @@ body{
 	margin:0px;
 	padding:0%;
 }
-/*#colorStrip{
-	width:100%;
-	background-color: var(--AposColor);
-	color: var(--AposColor);
 
-}*/
 #offBulb{
 	color:var(--BulbColoroff);
 }
@@ -65,7 +60,6 @@ h1,h2,h3,h4,p,a span,li{
 
 	font-size: 120%;
 	font-weight: 600;
-/*	padding:0% 7% 0% 7%;*/
 }
 .navbar-nav .nav-link{
 	color:var(--navItemColor);
@@ -78,27 +72,7 @@ h1,h2,h3,h4,p,a span,li{
 	padding:10% 0% 10% 0%;
 	margin-bottom: 100px;
 }
-/*#homerow{
-	background-image: url("../img/sunset.jpeg");
-	height: 100vh;
-	width:100vw;
-	   Create the parallax scrolling effect 
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}*/
-.img-parallax {
-  width: 100vmax;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%,0);
-  pointer-events: none
-}
 #homeIMG img{
-	/*padding:14%*/;
 	border-radius: 50%;
 	border:5px solid var(--socialPanelColor);
 }
@@ -113,7 +87,6 @@ h1,h2,h3,h4,p,a span,li{
 	display:block;
 	margin-top: 3px;
 	margin-bottom: 3px;
-/*	color:#00455B;*/
 	font-size: 100%;
 }
 .social-contacts{
@@ -152,8 +125,7 @@ h1,h2,h3,h4,p,a span,li{
 }
 .section-heading{
 	font-size: 380%;
-	font-family: 'Muli', sans-serif;
-/*	color: #0090BD;*/
+	font-family: 'Varela Round', sans-serif;
 }
 #Aboutme,#Projects,#Aboutme1,#Aboutme2{
 	padding:7%;
@@ -187,8 +159,7 @@ h1,h2,h3,h4,p,a span,li{
 	color:var(--socialPanelColor);
 }
 footer{
-	/*font-size: 300%;*/
-	font-family: 'Lato', sans-serif;
+	font-family: 'Varela Round', sans-serif;
 	text-align:center;
 }
 #contactpara,.contactbottom,.fa-bars{
