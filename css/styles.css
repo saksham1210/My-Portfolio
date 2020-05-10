@@ -1,12 +1,12 @@
 html[data-theme='dark']{
 	--background-color: #0a192f;
-	--navbarColor:#0a192f/*#64ffda*/;
+	--navbarColor:#0a192f;
 	--socialPanelColor:#FF5733;
 	--TextColor:floralwhite;
 	--cardFooterColor:#303C55;
 	--FAcolor:floralwhite;
 	--BulbColoroff:floralwhite;
-	--BulbColoron:#0a192f/*#64ffda*/;
+	--BulbColoron:#0a192f;
 	--AposColor:#FF5733;
 	--navItemColor:floralwhite;
 }
@@ -17,7 +17,7 @@ html[data-theme='light']{
 	--TextColor:black;
 	--cardFooterColor:#F0F0F0;
 	--FAcolor:black;
-	--BulbColoroff:white/*#04ABDF*/;
+	--BulbColoroff:white;
 	--BulbColoron:black;
 	--AposColor:#04ABDF;
 	--navItemColor:black;
@@ -174,6 +174,11 @@ footer{
 	color: var(--AposColor);
 	font-weight: 1000;
 }
+#developedby{
+	font-size:90%;
+	padding:auto;
+	margin-top: 10px;
+}
 
 img{
 	max-width: 100%;
@@ -182,7 +187,9 @@ img{
 	padding-right: auto;
 
 }
+
 /*TOGGGLE SWITCH*/
+
 input[type=checkbox]{
 	height: 0;
 	width: 0;
