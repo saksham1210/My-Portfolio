@@ -51,7 +51,7 @@ h1,h2,h3,h4,p,a span,li{
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
-#apos{
+.apos{
 	color: var(--AposColor);
 	font-family: 'Varela Round', sans-serif;
 	font-size:120%;
