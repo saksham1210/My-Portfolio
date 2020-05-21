@@ -13,7 +13,7 @@ html[data-theme='dark']{
 html[data-theme='light']{
 	--background-color: white;
 	--navbarColor:white;
-	--socialPanelColor:#FFC300;
+	--socialPanelColor:#04ABDF/*#FFC300*/;
 	--TextColor:black;
 	--cardFooterColor:#F0F0F0;
 	--FAcolor:black;
@@ -21,6 +21,13 @@ html[data-theme='light']{
 	--BulbColoron:black;
 	--AposColor:#04ABDF;
 	--navItemColor:black;
+}
+#particles-js{
+	z-index: -1;
+	position:fixed;
+	top:0;
+	height: 100vh;
+	width:100vw;
 }
 html{
 	scroll-behavior: smooth;
@@ -170,7 +177,7 @@ footer{
 	font-size:130%;
 }
 
-#slash{
+.slash{
 	color: var(--AposColor);
 	font-weight: 1000;
 }
