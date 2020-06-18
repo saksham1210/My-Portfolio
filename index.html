@@ -10,7 +10,7 @@
 
     <link rel="preload" as='style' onload="this.rel='stylesheet'" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" crossorigin="anonymous" onload="this.rel='stylesheet'">
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" crossorigin="anonymous" onload="this.rel='stylesheet'">
+	<script rel="preload" as="script" src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/lazysizes.min.js" async=""></script>
     <title>Saksham Dhull</title>
@@ -44,13 +44,16 @@
 						<a href="#Contactme" class="nav-link">Contact</a>
 					</li>
 					<li class="nav-item text-center">
+						<a href="./Saksham_Dhull_ext.pdf" target="_blank" class="nav-link">Resume</a>
+					</li>
+					<li class="nav-item text-center">
 						<div class="container-fluid pr-0 pl-0">
 							<div class="row align-items-center align-self-center">
 								<div class="col-4 pl-0 pr-0">
 									<span class="fas fa-lightbulb fa-lg" id="onBulb"></span>
 								</div>
 								<div class="col-4 pl-0 align-items-center">
-									<input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+									<input type="checkbox" id="switch" name="theme" /><label for="switch"><Toggle></label>
 								</div>
 								<div class="col-4 align-items-center">
 									<i class="far fa-lightbulb fa-lg" id="offBulb"></i>
@@ -184,48 +187,39 @@
 	<div class="container-fluid w-100 main ">
 
 		<!---------------- LANDING PAGE ----------------->
+		<!-- ROW-0 -->
+		<!-------------------- SOCIAL PANEL ON LEFT ------------->
+		<div class="row">
+			<div class="col-1 pl-0 d-sm-flex d-none pl-0">
+				<div class="social-contacts d-sm-flex d-none pl-0 ">
+					<div id="centerthisL" class="p-2">
+						<a aria-label="linkedin Button" class="btn btn-social-icon btn-social-icon-custom" rel="noreferrer" href="https://www.linkedin.com/in/sakshamdhull/" target="_blank">
+							<i class="fab fa-linkedin fa-lg"></i>
+						</a>
+						<a aria-label="Github Button" class="btn btn-social-icon btn-social-icon-custom" rel="noreferrer" href="https://github.com/saksham1210" target="_blank">
+							<i class="fab fa-github fa-lg"></i>
+						</a>
+						<a aria-label="Instagram Button" class="btn btn-social-icon btn-social-icon-custom" rel="noreferrer" href="https://www.instagram.com/bloop__doop/" target="_blank">
+							<i class="fab fa-instagram fa-lg"></i>
+						</a>
+						<a aria-label="twitter Button" class="btn btn-social-icon btn-social-icon-custom" rel="noreferrer" href="https://twitter.com/Bloop__Doop" target="_blank">
+							<i class="fab fa-twitter fa-lg"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- ROW-1 -->
 
 		<section id="homerow">
 			<div class="row vh-100" >
-
-			<!-------------------- SOCIAL PANEL ON LEFT ------------->
-
-				<div class="col-1 pl-0 d-sm-flex d-none pl-0">
-					<div class="social-contacts d-sm-flex d-none pl-0 ">
-						<div id="centerthisL" class="p-2">
-							<a aria-label="linkedin Button" class="btn btn-social-icon btn-social-icon-custom" rel="noreferrer" href="https://www.linkedin.com/in/sakshamdhull/" target="_blank">
-								<i class="fab fa-linkedin fa-lg"></i>
-							</a>
-							<a aria-label="Github Button" class="btn btn-social-icon btn-social-icon-custom" rel="noreferrer" href="https://github.com/saksham1210" target="_blank">
-								<i class="fab fa-github fa-lg"></i>
-							</a>
-							<a aria-label="Instagram Button" class="btn btn-social-icon btn-social-icon-custom" rel="noreferrer" href="https://www.instagram.com/bloop__doop/" target="_blank">
-								<i class="fab fa-instagram fa-lg"></i>
-							</a>
-							<a aria-label="twitter Button" class="btn btn-social-icon btn-social-icon-custom" rel="noreferrer" href="https://twitter.com/Bloop__Doop" target="_blank">
-								<i class="fab fa-twitter fa-lg"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-
 				<!----------------- HELLO BOX ----------------->
 
-				<div class="container col-10 m-auto" id="HomePage">
+				<div class="container col-auto m-auto vw-100" id="HomePage">
 					<div class="row justify-content-center">
-						<div class="col-12 col-sm-5 align-self-center" >
-							<div class="row justify-content-start pl-1">
-								<div class="col-5">
-									<h1 id="hello"> Hello,</h1>
-								</div>
-								<div class="col-12 ">
-									<h1>I<span class="apos">'</span>m <span class="slash">Saksham</span></h1>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-5"  id="homeIMG">
-							<img class="img-fluid lazyload" data-src="img/dp1.jpg" alt="My Photo">
+						<div class="col-12 text-center align-self-center" >
+							<span id="hello"> Hello, I<span class="apos">'</span>m <span id="typed" class="name"></span></span>
 						</div>
 					</div>
 				</div>
@@ -367,31 +361,20 @@
             $("#project3").click(function()
             {
                 $("#MusicalModal").modal("show");
-            });
-            // $("#NavbarIcon").click(function()
-            // {
-
-            // 	var check=$(".navbar-toggler").attr("aria-expanded");
-            // 	console.log(check);
-            // 	if (check)
-            // 	{
-            // 		console.log("hohohoh");
-            // 		$("#NavbarIcon").removeClass("fa-times");
-            // 		$("#NavbarIcon").addClass("fa-bars");
-            // 	}
-            // 	else{
-            // 		console.log("heheheh");
-            // 		$("#NavbarIcon").removeClass("fa-bars");
-            // 		$("#NavbarIcon").addClass("fa-times");
-            // 	}
-            	
-            // });
-            
+            });            
         });
         $(function () {
 		  $('.tooltip-test').tooltip();
 		});
-    </script>
+	</script>
+	<script>
+		var typed = new Typed('#typed', {
+		  strings: ["a Developer!","a Photographer?","Saksham Dhull"],
+		  typeSpeed:100,
+		  backSpeed:80,
+		  cursorChar:"|"
+		});
+	</script>
     <script>
 		ScrollReveal().reveal('.section-heading',{distance:"100px",duration:1500});
 		ScrollReveal().reveal('#Aboutme1',{distance:"100px",duration:1500});
