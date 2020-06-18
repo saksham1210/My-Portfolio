@@ -236,13 +236,13 @@ label:active:after {
 	#hello {font-size:360%;}
 }
 @media (min-width: 768px) {  
-	#hello {font-size:450%;} 
+	#hello {font-size:427%;} 
 }
 @media (min-width: 992px) { 
-	#hello {font-size:500%;} 
+	#hello {font-size:435%;} 
 }
 @media (min-width: 1200px) {  
-	#hello {font-size:520%;} 
+	#hello {font-size:630%;} 
 }
 
 
