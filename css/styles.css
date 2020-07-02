@@ -3,7 +3,6 @@ html[data-theme='dark']{
 	--navbarColor:#0a192f;
 	--socialPanelColor:#FF5733;
 	--TextColor:floralwhite;
-	--cardFooterColor:#303C55;
 	--FAcolor:floralwhite;
 	--BulbColoroff:floralwhite;
 	--BulbColoron:#0a192f;
@@ -15,7 +14,6 @@ html[data-theme='light']{
 	--navbarColor:white;
 	--socialPanelColor:#04ABDF/*#FFC300*/;
 	--TextColor:black;
-	--cardFooterColor:#F0F0F0;
 	--FAcolor:black;
 	--BulbColoroff:white;
 	--BulbColoron:black;
@@ -75,10 +73,8 @@ h1,h2,h3,h4,p,a span,li{
 	margin-bottom: 100px;
 }
 #hello{
-	/* font-size:520%; */
 	font-family: 'Varela Round', sans-serif;
 	color:var(--navItemColor);
-	/* word-wrap: break-word; */
 }
 .apos,.name{
 	color: var(--AposColor);
@@ -103,6 +99,10 @@ h1,h2,h3,h4,p,a span,li{
 	height:100%;
 
 }
+#heart{
+	color: red;
+	font-size: 150%;
+}
 #centerthisL{
 	margin-bottom: auto;
 	margin-top: auto;
@@ -113,12 +113,20 @@ h1,h2,h3,h4,p,a span,li{
 
 .card{
 	background-color:var(--background-color);
+	border: none;
 }
 .card-footer{
-	background-color: var(--cardFooterColor);
+	background-color: var(--background-color);
+	border: none;
+	font-weight: bold;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 130%;
 }
 .card-body{
 	padding:3%;
+}
+.card-body img{
+	border-radius: 10%;
 }
 .card:hover{
 	cursor:pointer;
@@ -148,7 +156,9 @@ h1,h2,h3,h4,p,a span,li{
 .modal-header .close {
   color: var(--TextColor);
 }
-
+.modal-content{
+	border-radius: 10%;
+}
 .modal-body {
   background: var(--background-color);
 }

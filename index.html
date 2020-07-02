@@ -11,7 +11,7 @@
     <link rel="preload" as='style' onload="this.rel='stylesheet'" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" crossorigin="anonymous" onload="this.rel='stylesheet'">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/lazysizes.min.js" async=""></script>
+	<script src="js/lazysizes.min.js" async=""></script>
     <title>Saksham Dhull</title>
 </head>
 
@@ -104,7 +104,7 @@
 		</div>
 	</div>
 
-	<!---------------- MODAL PROJECT-1 --------------->
+	<!---------------- MODAL PROJECT-2 --------------->
 
 	<div class="modal fade" id="ExpazeModal" role="dialog">
 		<div class="modal-xl vw-100 modal-dialog modal-dialog-centered"  role="dialog">
@@ -276,7 +276,7 @@
 							<img class="img-fluid lazyload" data-src="img/pvz1.jpg" alt="Plants vs Zombies image">
 						</div>
 						<div class="card-footer text-center">
-							<a class="btn stretched-link"><span>Plants Vs Zombies</span></a>
+							<a class="stretched-link"><span>Plants Vs Zombies</span></a>
 						</div>
 					</div>
 				</div>
@@ -289,7 +289,7 @@
 							<img class="img-fluid lazyload" data-src="img/expazeGamePlay.png" alt="expaze-icon">
 						</div>
 						<div class="card-footer text-center">
-							<a class="btn stretched-link"><span>Expaze</span></a>
+							<a class="stretched-link"><span>Expaze</span></a>
 						</div>
 					</div>
 				</div>
@@ -302,7 +302,7 @@
 							<img class="img-fluid lazyload" data-src="img/Dancefloor.jpg" alt="DanceFloor Image">
 						</div>
 						<div class="card-footer text-center">
-							<a class="btn stretched-link"><span>Musical Dance Floor</span></a>
+							<a class="stretched-link"><span>Musical Dance Floor</span></a>
 						</div>
 					</div>
 				</div>
@@ -334,16 +334,15 @@
 				</div>
 			</div>
 		</section>
-		<p id="developedby">Designed & Developed with &hearts; by <a href="https://www.linkedin.com/in/sakshamdhull/">Saksham</a></p>
+		<p id="developedby">Designed & Developed with <span id="heart">&hearts;</span> by <a href="https://www.linkedin.com/in/sakshamdhull/">Saksham</a></p>
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script async src="https://unpkg.com/scrollreveal" crossorigin="anonymous"></script>
-	<script async src="https://kit.fontawesome.com/a5546b13fe.js" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+	<script async src="./js/FontAwesome.js" crossorigin="anonymous"></script>
+	<script src="./js/Particles.js"></script>
+	<script src="./js/Typed.js"></script>
 	<script>
         $(document).ready(function()
         {
@@ -366,21 +365,11 @@
 	</script>
 	<script>
 		var typed = new Typed('#typed', {
-		  strings: ["a Developer!","a Photographer?","Saksham Dhull"],
+		  strings: ["a Developer!","a Photographer?","Saksham."],
 		  typeSpeed:100,
 		  backSpeed:80,
 		  cursorChar:"|"
 		});
-	</script>
-    <script>
-		ScrollReveal().reveal('.section-heading',{distance:"100px",duration:1500});
-		ScrollReveal().reveal('#Aboutme1',{distance:"100px",duration:1500});
-		ScrollReveal().reveal('#Aboutme2',{distance:"100px",duration:1500});
-		ScrollReveal().reveal('#project1',{distance:"100px",duration:1500});
-		ScrollReveal().reveal('#project2',{distance:"100px",duration:1500});
-		ScrollReveal().reveal('#project3',{distance:"100px",duration:1500});
-		ScrollReveal().reveal('#Contactme',{distance:"100px",duration:1500});
-		ScrollReveal().reveal('#developedby',{distance:"100px",duration:1500});
 	</script>
 	<script>
     	const particlesJSON_light = {
