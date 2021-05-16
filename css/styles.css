@@ -1,4 +1,4 @@
-html[data-theme='dark']{
+html.dark{
 	--background-color: #0a192f;
 	--navbarColor:#0a192f;
 	--socialPanelColor:#FF5733;
@@ -9,7 +9,7 @@ html[data-theme='dark']{
 	--AposColor:#FF5733;
 	--navItemColor:floralwhite;
 }
-html[data-theme='light']{
+html{
 	--background-color: white;
 	--navbarColor:white;
 	--socialPanelColor:#04ABDF/*#FFC300*/;
@@ -194,51 +194,6 @@ img{
 
 }
 
-/*TOGGGLE SWITCH*/
-
-input[type=checkbox]{
-	height: 0;
-	width: 0;
-	visibility: hidden;
-	background:black;
-	/* display: none; */
-}
-
-label {
-	cursor: pointer;
-	text-indent: -9999px;
-	width: 30px;
-	height: 18px;
-	background: black;
-	display: block;
-	border-radius: 100px;
-	position: relative;
-}
-
-label:after {
-	content: '';
-	position: absolute;
-	top: 3px;
-	left: 3px;
-	width: 10px;
-	height: 12px;
-	background: #fff;
-	border-radius: 100px;
-	transition: 0.4s;
-}
-
-input:checked + label {
-	background:#FF5733 ;
-}
-
-input:checked + label:after {
-	left: calc(100% - 3px);
-	transform: translateX(-100%);
-}
-
-label:active:after {
-	width: 10px;
-}
 @media (min-width: 320px) {  
 	#hello {font-size:265%;}
 }
